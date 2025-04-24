@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شحن 1xBet عبر بريدي موب</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      height: 80px;
+      margin: 10px;
+    }
+    .rip {
+      font-size: 1.5em;
+      color: #4fc3f7;
+      margin: 20px 0;
+    }
+    form {
+      background-color: #121212;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="1xbet-logo.png" alt="1xBet Logo">
+    <img src="AlgeriePoste.svg" alt="Algerie Poste Logo">
+    <h1>شحن رصيد 1xBet عبر بريدي موب</h1>
+  </header>
+
+  <p class="rip">أرسل المبلغ إلى: <strong>00799999002709037546</strong></p>
+  <p>بعد التحويل، يرجى ملء النموذج أدناه ليتم التحقق من الدفع وإرسال الرصيد:</p>
+
+  <form method="POST" action="submit.php" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="الاسم الكامل" required>
+    <input type="text" name="account" placeholder="رقم حساب 1xBet" required>
+    <input type="number" name="amount" placeholder="المبلغ المحول (دج)" required>
+    <input type="text" name="transfer_id" placeholder="رقم التحويل" required>
+    <input type="file" name="receipt" accept="image/*">
+    <textarea name="note" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+    <button type="submit">إرسال</button>
+  </form>
+</body>
+</html>
